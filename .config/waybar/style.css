@@ -1,0 +1,127 @@
+@define-color primary-col #ff3853;
+@define-color secondary-col #660033;
+@define-color tertiary-col #ffa8d4;
+
+* {
+    font-family: "Iosevka Nerd Font";
+    font-size: 14pt;
+    font-weight: 700;
+}
+
+
+window#waybar {
+    background: transparent;
+    /* border-radius: 10px; */
+}
+
+window#waybar>box {
+    padding: 5px 10px 5px 10px;
+    /* border: 4px solid @secondary-col; */
+    /* background-color: rgba(102, 0, 51, 0.5); */
+}
+
+#clock,
+#workspaces,
+#window,
+#tray,
+#network,
+#cpu,
+#memory,
+#battery,
+#custom-power
+{
+    /* opacity: 0.5; */
+    background-color: rgba(0.7,0.7,0.7,0.7);
+    border-radius: 90px;
+    color:white;
+    text-shadow: 3px 3px 0px @secondary-col;
+    margin: 2px 4px 2px 4px;
+    padding: 2px 15px 2px 15px;
+}
+
+#custom-reboot, #custom-lock, #custom-quit {
+    padding: 10px;
+}
+
+#custom-power {
+    color: rgb(255, 0, 0);
+}
+
+#clock {
+    font-weight: 900;
+}
+
+#window {
+    color: @primary-col;
+}
+
+button {
+    color:white;
+    margin: 4px 4px;
+    border-radius: 5px;
+}
+
+#custom-lock,
+#custom-quit,
+#custom-reboot {
+    transition:
+        color ease-out 0.25s;
+    color: @primary-col;
+}
+
+#custom-lock:hover,
+#custom-quit:hover,
+#custom-reboot:hover {
+    color: @tertiary-col;
+}
+
+button {
+    transition:
+        color ease-out 0.25s,
+        text-shadow ease-out 0.25s,
+        box-shadow ease-out 0.25s,
+        background ease-out 0.25s,
+        border ease-out 0.25s;
+
+    padding: 3px;
+    /* box-shadow: 4px 4px 0px @secondary-col; */
+    /* text-shadow: 4px 4px 0px @secondary-col; */
+    /* background: inherit; */
+    /* border: 4px solid @primary-col; */
+    /* color: @primary-col; */
+    background: inherit;
+
+    border-radius: 90px;
+
+    border: none;
+    color: gray;
+    /* border-radius: 0; */
+    background-color: #5e5e5e;
+    box-shadow: 3px 3px 0px #404040;
+    border: 4px solid transparent;
+    text-shadow: none;
+}
+button.active {
+    border: none;
+    color: white;
+    /* border-radius: 0; */
+    background-color: @primary-col;
+    box-shadow: 3px 3px 0px @secondary-col;
+    border: 4px solid transparent;
+    text-shadow: none;
+}
+button:hover:not(.active) {
+    /* color: white; */
+    /* background-color: rgba(1,1,1,0.5); */
+    /* box-shadow: 4px 4px 0px rgba(1,1,1,0.9); */
+    /* text-shadow: none; */
+    /* border: 4px solid transparent; */
+
+    border: none;
+    color: white;
+    /* border-radius: 0; */
+    background-color: #9e9e9e;
+    box-shadow: 3px 3px 0px #808080;
+    border: 4px solid transparent;
+    text-shadow: none;
+}
