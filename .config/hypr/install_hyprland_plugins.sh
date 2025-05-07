@@ -4,6 +4,8 @@ plugins=(
     waybar
     hyprpaper
     rofi
+    pavucontrol
+    nautilus
 )
 # aur_plugins=(
 #     hyprswitch
