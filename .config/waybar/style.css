@@ -32,7 +32,7 @@ window#waybar>box {
 #custom-power
 {
     /* opacity: 0.5; */
-    background-color: rgba(0.7,0.7,0.7,0.7);
+    background-color: rgba(51,0,0,0.7);
     border-radius: 90px;
     color:white;
     text-shadow: 3px 3px 0px @secondary-col;
@@ -84,7 +84,7 @@ button {
         background ease-out 0.25s,
         border ease-out 0.25s;
 
-    padding: 3px;
+    padding: 0px 3px 0px 3px;
     /* box-shadow: 4px 4px 0px @secondary-col; */
     /* text-shadow: 4px 4px 0px @secondary-col; */
     /* background: inherit; */
