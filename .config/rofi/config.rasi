@@ -99,7 +99,7 @@ window {
     background-color: var(background);
     border: 10px 10px 10px 10px;
     border-radius: 10px;
-    border-color: rgba(51,0,0,100%);
+    border-color: rgba(68, 0, 17,100%);
 }
 mainbox {
     padding: 0;
