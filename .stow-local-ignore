@@ -3,3 +3,4 @@ install*
 .git
 .gitignore
 .gitmodules
+README.md

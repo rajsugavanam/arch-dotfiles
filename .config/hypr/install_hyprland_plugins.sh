@@ -6,6 +6,7 @@ plugins=(
     rofi
     pavucontrol
     nautilus
+    greetd
 )
 # aur_plugins=(
 #     hyprswitch
